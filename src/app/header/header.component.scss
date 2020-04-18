@@ -1,0 +1,16 @@
+$header: #333333;
+
+.header {
+  background-color: $header;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 320px) {
+      max-width: 100px;
+    }
+  }
+}
