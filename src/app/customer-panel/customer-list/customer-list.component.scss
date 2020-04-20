@@ -1,0 +1,54 @@
+@import "../../../styles.scss";
+
+.customer-list--card {
+  border: 1px solid $grey;
+  border-radius: 0px;
+  width: 80%;
+  margin: 0 auto;
+
+  div {
+    align-items: baseline !important;
+  }
+
+  mat-card-title {
+    font-size: 18px;
+  }
+
+  mat-card-subtitle {
+    font-size: 16px;
+  }
+
+  .mat-mini-fab {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    position: relative;
+    top: 17px;
+    background-color: $green;
+
+    span {
+      padding-left: 25px;
+      font-size: 16px;
+      color: $darker-grey;
+      font-weight: 300;
+      line-height: 23px;
+      position: relative;
+      bottom: 13px;
+    }
+  }
+
+  .mat-raised-button {
+    border: 1px solid $orange;
+    border-radius: 5px;
+    width: 132px;
+    height: 44px;
+    color: $orange;
+    font-size: 16px;
+    font-weight: 400;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}
