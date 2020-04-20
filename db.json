@@ -1,0 +1,32 @@
+{
+  "customers": [
+    {
+      "customer-name": "John Doe",
+      "email": "john_doe@test.com",
+      "cpf": "123.456.789-00",
+      "number": "(11) 9998-8745",
+      "status": "active"
+    },
+    {
+      "customer-name": "John Doe",
+      "email": "john_doe@test.com",
+      "cpf": "123.456.789-01",
+      "number": "(11) 9998-8743",
+      "status": "inactive"
+    },
+    {
+      "customer-name": "John Doe",
+      "email": "john_doe@test.com",
+      "cpf": "123.456.789-02",
+      "number": "(11) 9998-8745",
+      "status": "waiting"
+    },
+    {
+      "customer-name": "John Doe",
+      "email": "john_doe@test.com",
+      "cpf": "123.456.789-03",
+      "number": "(11) 9998-8745",
+      "status": "disabled"
+    }
+  ]
+}
