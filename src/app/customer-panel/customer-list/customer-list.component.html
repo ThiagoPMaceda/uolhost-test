@@ -8,16 +8,7 @@
     <mat-card-subtitle>{{ number }}</mat-card-subtitle>
   </div>
   <div fxLayout="row" fxLayoutAlign="space-between" [ngSwitch]="status">
-    <button
-      mat-mini-fab
-      disabled
-      [ngClass]="{
-        active: status === 'background-color: green',
-        inactive: status === 'inactive',
-        waiting: status === 'waiting',
-        disabled: status === 'disabled'
-      }"
-    >
+    <button class="{{ status }}" mat-mini-fab>
       <span *ngSwitchCase="'active'">Ativo</span>
       <span *ngSwitchCase="'inactive'">Inativo</span>
       <span *ngSwitchCase="'waiting'">Aguardando Ativação</span>
