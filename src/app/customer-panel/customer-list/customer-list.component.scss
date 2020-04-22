@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 .customer-list--card {
-  border: 1px solid $grey;
+  border: 1px solid $gray;
   border-radius: 0px;
   width: 80%;
   margin: 0 auto;
@@ -24,12 +24,13 @@
     border-radius: 100%;
     position: relative;
     top: 17px;
+    cursor: auto;
 
     span {
       padding-left: 25px;
       font-size: 13px;
       left: -7px;
-      color: $darker-grey;
+      color: $darker-gray;
       font-weight: 300;
       line-height: 23px;
       position: relative;
@@ -66,5 +67,5 @@
 }
 
 .disabled {
-  background-color: $light-grey;
+  background-color: $light-gray;
 }
