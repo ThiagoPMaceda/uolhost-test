@@ -1,4 +1,4 @@
-@import "../../../styles.scss";
+@import '../../../styles.scss';
 
 .customer-list--card {
   border: 1px solid $grey;
@@ -24,11 +24,11 @@
     border-radius: 100%;
     position: relative;
     top: 17px;
-    background-color: $green;
 
     span {
       padding-left: 25px;
-      font-size: 16px;
+      font-size: 13px;
+      left: -7px;
       color: $darker-grey;
       font-weight: 300;
       line-height: 23px;
@@ -40,7 +40,7 @@
   .mat-raised-button {
     border: 1px solid $orange;
     border-radius: 5px;
-    width: 132px;
+    width: 11 0px;
     height: 44px;
     color: $orange;
     font-size: 16px;
@@ -51,4 +51,20 @@
       color: $white;
     }
   }
+}
+
+.active {
+  background-color: $green;
+}
+
+.inactive {
+  background-color: $red;
+}
+
+.waiting {
+  background-color: $yellow;
+}
+
+.disabled {
+  background-color: $light-grey;
 }
