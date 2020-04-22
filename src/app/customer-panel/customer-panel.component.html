@@ -13,4 +13,12 @@
   <button mat-raised-button>Novo cliente</button>
 </div>
 
-<app-customer-list></app-customer-list>
+<div class="customer-list--container" *ngFor="let customer of customersArray">
+  <app-customer-list
+    [customerName]="customer.customerName"
+    [email]="customer.email"
+    [cpf]="customer.cpf"
+    [number]="customer.number"
+    [status]="customer.status"
+  ></app-customer-list>
+</div>
