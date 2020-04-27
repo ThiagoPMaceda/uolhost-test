@@ -6,8 +6,34 @@
   width: 80%;
   margin: 0 auto;
 
+  @media screen and (min-width: 720px) {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75px;
+  }
+
   div {
-    align-items: baseline !important;
+    @media screen and (min-width: 720px) {
+      flex-direction: column !important;
+      padding-left: 30px;
+      margin-top: 20px;
+      flex-basis: 100%;
+    }
+  }
+
+  .status {
+    position: absolute;
+    left: 174px;
+    @media screen and (min-width: 720px) {
+      position: relative;
+      left: 0px;
+    }
+  }
+
+  .cpf {
+    @media screen and (min-width: 720px) {
+      margin-bottom: 8px;
+    }
   }
 
   mat-card-title {
@@ -29,7 +55,7 @@
     span {
       padding-left: 25px;
       font-size: 13px;
-      left: -7px;
+      left: 0px;
       color: $darker-gray;
       font-weight: 300;
       line-height: 23px;
