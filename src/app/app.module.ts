@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CustomerPanelComponent } from "./customer-panel/customer-panel.component";
 import { MatCardModule } from "@angular/material/card";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { CustomerRegisterComponent } from './customer-register/customer-register.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     HeaderComponent,
     CustomerPanelComponent,
     CustomerListComponent,
+    CustomerRegisterComponent,
   ],
   imports: [
     BrowserModule,
