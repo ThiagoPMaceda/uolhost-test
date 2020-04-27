@@ -1,1 +1,9 @@
-@import "../styles.scss";
+@import '../styles.scss';
+
+.customer {
+  @media screen and (min-width: 1024px) {
+    display: block;
+    width: 85%;
+    margin: auto;
+  }
+}
