@@ -4,16 +4,24 @@
     <mat-card-subtitle>{{ email }}</mat-card-subtitle>
   </div>
   <div fxLayout="row" fxLayoutAlign="space-between">
-    <mat-card-subtitle>{{ cpf }}</mat-card-subtitle>
+    <mat-card-subtitle class="cpf">{{ cpf }}</mat-card-subtitle>
     <mat-card-subtitle>{{ number }}</mat-card-subtitle>
   </div>
-  <div fxLayout="row" fxLayoutAlign="space-between" [ngSwitch]="status">
+  <div
+    class="status"
+    fxLayout="row"
+    fxLayoutAlign="space-between"
+    [ngSwitch]="status"
+  >
     <button class="{{ status }}" mat-mini-fab>
       <span *ngSwitchCase="'active'">Ativo</span>
       <span *ngSwitchCase="'inactive'">Inativo</span>
       <span *ngSwitchCase="'waiting'">Aguardando Ativação</span>
       <span *ngSwitchCase="'disabled'">Desativado</span>
     </button>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="space-between" [ngSwitch]="status">
     <button mat-raised-button><span>Editar</span></button>
   </div>
 </mat-card>
